@@ -1,0 +1,34 @@
+﻿Build started 2018/7/5 16:49:32.
+     1>Project "C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\DynamicWindowApproach\DynamicWindowApproach.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(18): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(61): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(71): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(72): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(73): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(94): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(114): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(115): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(116): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(117): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(121): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(123): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(147): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(148): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(150): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(167): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(191): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(204): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(225): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\administrator\documents\visual studio 2013\projects\dynamicwindowapproach\dynamicwindowapproach\main.cpp(226): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\Debug\DynamicWindowApproach.exe" /INCREMENTAL /NOLOGO opencv_ml2413d.lib opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_objdetect2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_nonfree2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\Debug\DynamicWindowApproach.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\Debug\DynamicWindowApproach.lib" /MACHINE:X86 Debug\Main.obj
+         DynamicWindowApproach.vcxproj -> C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\Debug\DynamicWindowApproach.exe
+     1>Done Building Project "C:\Users\Administrator\documents\visual studio 2013\Projects\DynamicWindowApproach\DynamicWindowApproach\DynamicWindowApproach.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.21
