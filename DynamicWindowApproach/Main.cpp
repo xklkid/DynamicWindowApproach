@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Constant.h"
 #include <numeric>
+#include <fstream>
 
 using namespace std;
 
@@ -11,6 +12,7 @@ vector<RobotState> GenerateTraj(RobotState initState, float vel, float ome);
 float CalcHeading(RobotState rState, int goal[]);
 float CalcClearance(RobotState rState, int obs[][2]);
 float CalcBreakingDist(float velo);
+
 
 void main()
 {
@@ -23,7 +25,7 @@ void main()
 	while (1)
 	{
 		// 到达目标点退出循环
-		if (currentState.xPosition == goal[0] && currentState.yPosition == goal[1])
+		if (currentState.xPosition < (goal[0] + 0.1) && currentState.xPosition > (goal[0] - 0.1) && currentState.yPosition < (goal[1] + 0.1) && currentState.yPosition > (goal[1] - 0.1))
 		{
 			cout << "Reach the Goal!" << endl;
 			break;
@@ -35,13 +37,18 @@ void main()
 
 		path.push_back(currentState);
 
-		//cout << currentState.xPosition << " " << currentState.yPosition << endl;
+		cout << currentState.xPosition << " " << currentState.yPosition << endl;
 	}
 
+	//输出坐标到txt
+	ofstream file("map.txt");
 	for (vector<RobotState>::iterator i = path.begin(); i < path.end(); i++)
 	{
-		cout << i->yPosition << " " << i->xPosition << endl;
+		file << i->xPosition << " " << i->yPosition << endl;
 	}
+	file.close();
+
+	system("pause");
 
 }
 
@@ -116,8 +123,7 @@ vector<float> CreateDW(RobotState curState)
 	float tmpMinOmega = curState.omega - MAX_ACCOMEGA*DT;
 	float tmpMaxOmega = curState.omega + MAX_ACCOMEGA*DT;
 
-	//dw[0] = tmpMinVelocity > MIN_VELOCITY ? tmpMinVelocity : MIN_VELOCITY;
-	dw[0] = 0;
+	dw[0] = tmpMinVelocity > MIN_VELOCITY ? tmpMinVelocity : MIN_VELOCITY;
 	dw[1] = tmpMaxVelocity < MAX_VELOCITY ? tmpMaxVelocity : MAX_VELOCITY;
 	dw[2] = tmpMinOmega;
 	dw[3] = tmpMaxOmega < MAX_OMEGA ? tmpMaxOmega : MAX_OMEGA;
